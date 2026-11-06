@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery Example</title>
+    <script src="jquery.js"></script>
+</head>
+<body>
+    <p>Click me to hide. </p>
+    <button id="hideme">Hide after click</button>
+    <script>
+        var x=document.getElementById("hideme");
+        x.addEventListener("click", function(){
+            x.style.display="none";
+        });
+        $(document).ready(function(){
+            $(".hideme").hover(function(){  //click,hover,dbclick,mouseover,etc//"p"
+                $(this).hide();
+
+            });
+        });
+    </script>
+</body>
+</html>

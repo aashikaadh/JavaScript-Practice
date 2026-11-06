@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StripedTable</title>
+     <script src="jquery.js"></script>
+</head>
+<body>
+    <table border="2">
+        <tr>
+<td>Aashika</td>
+<td>Aashika</td>
+<td>Aashika</td>
+
+        </tr>
+          <tr>
+<td>bijaya</td>
+<td>bijaya</td>
+<td>bijaya</td>
+
+        </tr>
+          <tr>
+<td>Aashika</td>
+<td>Aashika</td>
+<td>Aashika</td>
+
+        </tr>
+          <tr>
+<td>Aashika</td>
+<td>Aashika</td>
+<td>Aashika</td>
+
+        </tr>
+                 <tr>
+<td>Aashika</td>
+<td>Aashika</td>
+<td>Aashika</td>
+
+        </tr>
+        <tr>
+            <td><input type="text"></td>
+            <td><input type=""></td>
+        </tr>
+    </table>
+    
+    <script>
+        $(document).ready(function(){
+            $("tr").css("color","whitesmoke");
+            $("tr:even").css("backgroundColor","blue");
+             $("tr:odd").css("backgroundColor","green");
+
+             $("input").focus(function(){
+             $(this).css("backgroundColor","purple");
+                 $(this).css("borderRadius","20px");
+
+        });
+        $("input").blur(function(){
+             $(this).css("backgroundColor","pink");
+                 $(this).css("borderRadius","20px");
+        })
+    });
+    </script>
+</body>
+</html>

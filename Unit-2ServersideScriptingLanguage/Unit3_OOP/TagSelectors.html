@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag selectors</title>
+     <script src="jquery.js"></script>
+</head>
+<body>
+    <p>this is first p</p>
+      <p>this is second p</p>
+        <p class="intro">this is third p</p>
+          <p>this is fourth p</p>
+          <ul>
+            <li>first ul first li</li>
+              <li>first ul second li</li>
+                <li>first ul third li</li>
+          </ul>
+           <ul>
+            <li>second ul first li</li>
+              <li>second ul second li</li>
+                <li>second ul third li</li>
+          </ul>
+        
+        
+</body>
+<script>
+    // $(document).ready(function(){
+    //     $("p:first").click(function(){
+    //         $(this).hide().fadeIn();
+    //     });
+    // });
+
+     $(document).ready(function(){
+        $("ul li:first-child").css("color","green"); //("fontSize",20);
+          
+        });
+ 
+</script>
+</html>

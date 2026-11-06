@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Form</title>
+</head>
+<body>
+    <h1> Registeration Form for new User</h1>
+    <form action="Register.php" method="post" onsubmit="return validate()">
+
+        <table style="border: 2px solid green">
+            <tr>
+                <td>Name</td>
+                <td><input type="text" name="sname" id="p1"></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type="email" name="semail" id="p2"></td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td><input type="password" name="spass" id="pass"></td>
+            </tr>
+<tr>
+                <td>Confirm Password</td>
+                <td><input type="password" name="cpass" id="cpass"></td>
+            </tr>
+<tr>
+    <td></td>
+    <td><input type="submit" value="Register"></td>
+</tr>
+
+
+        </table>
+    </form>
+   
+</body>
+</html>
+ <script>
+       function validate(){
+        var p=document.getElementById("pass").value;
+        var cp=document.getElementById("cpass").value;
+        if(p !==cp){
+alert("Password do not match.");
+return false;
+        }else{
+            return true;
+        }
+        
+       }  
+    </script>

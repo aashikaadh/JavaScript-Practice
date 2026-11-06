@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ON Function </title>
+      <script src="jquery.js"></script>
+</head>
+<body>
+    <p>I hanve multiple events attached with.Mouseenter,Mouseout, click.</p>
+
+    <script>
+        $("p").on({
+            mouseenter:function(){
+                $(this).css("background-color","green");
+
+            },
+            mouseleave:function(){
+                $(this).css("background-color","blue");
+            },
+            click:function(){
+                $(this).css("background-color","yellow"); 
+            },
+        });
+    </script>
+</body>
+</html>
